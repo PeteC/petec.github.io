@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><? echo $this->pageTitle; ?></title>
+    <title>{{ page.title }}</title>
     <meta name=description content="Contact Pete Callaway, freelance iOS developer. London, UK">
     <meta name=author content="Pete Callaway">
     <meta name="viewport" content="width=940px" id="theViewport" />
@@ -32,8 +32,8 @@
   <body class="navlocation_{{ page.selected_navigation }}">
     <div id="header">
       <div id="header_inner">
-        <img src="images/logo.jpg">
-        <div id="navigation"><ul><li><a href="./" id="nav_welcome">Home</a></li><li><a href="about" id="nav_about">About</a></li><li><a href="contact" id="nav_contact">Contact</a></li></ul></div>
+        <img src="/images/logo.jpg">
+        <div id="navigation"><ul><li><a href="/" id="nav_welcome">Home</a></li><li><a href="about" id="nav_about">About</a></li><li><a href="contact" id="nav_contact">Contact</a></li></ul></div>
       </div>
     </div>
 
