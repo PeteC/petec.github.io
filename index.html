@@ -1,13 +1,30 @@
 ---
 layout: default
 title: Your New Jekyll Site
+custom_css: index.css
+selected_navigation: welcome
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="app banner">
+	<div class="screenshots_container">
+		<img src="images/apps/busy/screenshots.png" />
+	</div>
+	<div class="description_container">
+		<img src="images/apps/busy/icon.png" class="app_icon" />
+		<h2>Busy</h2>
+		<p>Check if your friends or colleagues are busy before you give them a call. Let your friends know you're busy so you're not interrupted.</p>
+		<p class="appstore"><a href="http://www.appstore.com/dativestudios/busy"><img src="images/apps/appstore.png" /></a></p>
+	</div>
+</div>
+
+<div class="app">
+	<div class="screenshots_container flipped">
+		<img src="images/apps/newskiosk/screenshots.jpg" />
+	</div>
+	<div class="description_container flipped">
+		<img src="images/apps/newskiosk/icon.jpg" class="app_icon" />
+		<h2>News Kiosk</h2>
+		<p>Use News Kiosk to search for news sources on any topic you like and subscribe to those that interest you. News Kiosk will show you the latest news from your subscribed list as a rack of newspapers, ready for you to open and browse.</p>
+		<p class="appstore"><a href="http://www.appstore.com/dativestudios/newskiosk"><img src="images/apps/appstore.png" /></a></p>
+	</div>
 </div>

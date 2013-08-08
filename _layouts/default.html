@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+  <head>
+    <title><? echo $this->pageTitle; ?></title>
+    <meta name=description content="Contact Pete Callaway, freelance iOS developer. London, UK">
+    <meta name=author content="Pete Callaway">
+    <meta name="viewport" content="width=940px" id="theViewport" />
+    <script>
+      if (screen.width <= 540) {
+        var mvp = document.getElementById('theViewport');
+        mvp.setAttribute('content','width=540px');
+      }
+    </script>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    {% if page.custom_css %}
+    <link rel="stylesheet" type="text/css" href="/css/{{ page.custom_css }}" />
+    {% endif %}
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-831613-1']);
+      _gaq.push(['_trackPageview']);
 
-    </head>
-    <body>
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body class="navlocation_{{ page.selected_navigation }}">
+    <div id="header">
+      <div id="header_inner">
+        <img src="images/logo.jpg">
+        <div id="navigation"><ul><li><a href="./" id="nav_welcome">Home</a></li><li><a href="about" id="nav_about">About</a></li><li><a href="contact" id="nav_contact">Contact</a></li></ul></div>
+      </div>
+    </div>
 
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
+    <div id="content">
+      {{ content }}
 
-                {{ content }}
+    </div>
 
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
-
-    </body>
+    <div id="footer">
+      <p>Copyright &copy; Dative Studios Ltd, <? echo date("Y") ?></p>
+    </div> 
+  </body>
 </html>

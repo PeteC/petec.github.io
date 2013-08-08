@@ -1,0 +1,187 @@
+* {
+  font-family: "Helvetica Neue", Verdana, sans-serif;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-shadow: #fff 0 1px 0;
+  color: #2d2d2d;
+  font-size: 100%;
+  line-height: 1.375em;
+  background: url('../images/handmadepaper.jpg') repeat;
+}
+
+h1 {
+  font-size: 2.25em;
+  line-height: 1.333em;
+  margin-bottom: 0.306em;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.333em;
+  margin-bottom: 0.306em;       
+}
+
+p {
+  margin: 0 0 1.375em 0;
+}
+
+a, a:visited, a:hover {
+  color: #f60;
+  text-decoration: none;
+  border-bottom: 1px dotted #666;
+}
+
+blockquote {
+  border-left: 4px solid #aaa;
+  margin: 0 2em 1.375em 2em;
+  padding: 0 0 0 1em;
+}
+
+cite {
+  font-style: italic;
+}
+
+::selection {
+  background: #888;
+  color: #fff;
+  text-shadow: none;
+}
+
+#header, #header_inner {
+  background: url('../images/header_background.jpg') repeat-x;
+}
+
+#header_inner, #content, #footer {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#header_inner {
+  height: 85px;
+  overflow: hidden;
+}
+
+#navigation {
+  float: right;
+}
+
+#navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul li {
+  display: block;
+  float: left;
+  line-height: 58px;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation ul li a {
+  margin: 11px 0 0 20px;
+  padding: 0.3em 0.5em;
+  color: #fff;
+  text-shadow: #2d2d2d 0 1px 0;
+  font-size: 1.2em;
+  border: 1px solid rgba(255,255,255,0.0);
+}
+
+#navigation ul li a:hover, .navlocation_welcome a#nav_welcome, .navlocation_about a#nav_about, .navlocation_contact a#nav_contact {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  background-color: rgba(255,255,255,0.042);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.app {
+  border-top: 1px dashed #cbc9c5;
+  padding-top: 2em;
+  clear: both;
+}
+
+#content .app:nth-of-type(1) {
+  margin-top: 2em;
+}
+
+.app .screenshots_container {
+  clear: both;
+  padding: 0;
+  padding-bottom: 2em;
+  float: left;
+  width: 380px;
+}
+
+.app .description_container {
+  float: left;
+  margin: 0 0 40px 0;
+  padding: 0;
+  width: 520px;
+}
+
+.app .description_container p:nth-of-type(1) {
+  margin-top: 1.5em;
+}
+
+.app .description_container .appstore {
+  text-align: center;
+}
+
+img.app_icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 1.375em;
+  float: left;
+
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -o-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+  -o-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.4);        
+}
+
+#footer {
+  clear: both;
+  border-top: 1px dashed #cbc9c5;
+  padding-top: 1.5em;
+  text-align: center;
+}
+
+#footer p {
+  font-size: 80%;
+}
+
+@media only screen and (max-width : 540px) {
+  #header_inner, #content, #footer {
+    width: 520px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #header_inner {
+    height: 145px;
+  }
+
+  #header, #header_inner {
+    background: url('../images/header_background_tall.jpg') repeat-x;
+  }
+}

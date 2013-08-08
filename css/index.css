@@ -1,0 +1,47 @@
+#header_inner, #header {
+	background: url('../images/frontpage_header_background.jpg') repeat-x;
+}
+
+#header_inner {
+	height: 320px;
+	margin-bottom: -230px;
+	overflow: visible;
+}
+
+.app:nth-of-type(1) {
+	border-top: none;
+}
+
+.app .screenshots_container {
+	width: 520px;
+}
+
+.app .description_container {
+	width: 380px;
+}
+
+.app:nth-of-type(1) .description_container {
+	padding-top: 55px;
+}
+
+.app.banner p:nth-of-type(1) {
+	margin-top: 60px;
+}
+
+@media only screen and (max-width : 540px) {
+	#header_inner {
+		height: 380px;
+	}
+
+	#header, #header_inner {
+		background: url('../images/frontpage_header_background_tall.jpg') repeat-x;
+	}
+
+	.app:nth-of-type(1) .description_container {
+		padding-top: 0;
+	}
+
+	.app.banner p:nth-of-type(1) {
+		margin-top: 1em;
+	}
+}
