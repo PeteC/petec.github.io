@@ -1,0 +1,43 @@
+div.meta {
+	padding-bottom: 1em;
+	border-bottom: 1px dashed #cbc9c5;
+}
+
+div.meta p {
+	display: inline;
+	padding-right: 2em;
+}
+
+div.meta p:before {
+	content: "\f073";
+	font: 1.3em FontAwesome;
+	padding-right: 0.75em;
+}
+
+div.meta ul {
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
+div.meta ul:before {
+	content: "\f02c";
+	font: 1.3em FontAwesome;
+	padding-right: 0.5em;
+}
+
+div.meta ul li {
+	display: inline;
+}
+
+div.meta ul li:after {
+	content: ", ";
+}
+
+div.meta ul li:last-of-type:after {
+	content: "";
+}
+
+.post {
+	margin-top: 2em;
+}

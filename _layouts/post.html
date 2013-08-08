@@ -1,8 +1,18 @@
 ---
 layout: default
+selected_navigation: blog
+custom_css: post.css
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+
+<div class="meta">
+	<h1>{{ page.title }}</h1>
+	<p>{{ page.date | date_to_string }}</p>
+	<ul>
+		{% for category in page.categories %}
+		<li>{{ category }}</li>
+		{% endfor %}
+	</ul>
+</div>
 
 <div class="post">
 {{ content }}
