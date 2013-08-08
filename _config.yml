@@ -1,3 +1,7 @@
 name: Dative Studios
 markdown: redcarpet
 pygments: true
+
+root: /
+permalink: /blog/:year/:month/:day/:title/
+category_dir: blog/categories

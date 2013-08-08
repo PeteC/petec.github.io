@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/font/fontawesome-webfont.eot');
+  src: url('/font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/font/fontawesome-webfont.woff') format('woff'),
+    url('/font/fontawesome-webfont.ttf') format('truetype'),
+    url('/font/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'),
+    url('/font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   font-family: "Helvetica Neue", Verdana, sans-serif;
   font-weight: 300;
@@ -95,7 +107,7 @@ cite {
   border: 1px solid rgba(255,255,255,0.0);
 }
 
-#navigation ul li a:hover, .navlocation_welcome a#nav_welcome, .navlocation_about a#nav_about, .navlocation_contact a#nav_contact {
+#navigation ul li a:hover, .navlocation_welcome a#nav_welcome, .navlocation_about a#nav_about, .navlocation_contact a#nav_contact, .navlocation_blog a#nav_blog {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
