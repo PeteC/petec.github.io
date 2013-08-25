@@ -52,3 +52,9 @@ div.meta ul li:last-of-type:after {
 	padding: 0.5em;
 	border: 1px solid #cccccc;
 }
+
+@media only screen and (max-width : 540px) {
+  .post .img img {
+    max-width: 460px;
+  }
+}

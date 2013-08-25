@@ -125,8 +125,7 @@ We should also stop being the navigation control's delegate when the view contro
 }
 ```
 
-Now our view controller is the navigation controller's delegate, we can implement the longwinded ```UINavigationControllerDelegate``` method ```
-navigationController:animationControllerForOperation:fromViewController:toViewController:```. All we need to do here return a new instance of our custom transition.
+Now our view controller is the navigation controller's delegate, we can implement the following longwinded ```UINavigationControllerDelegate``` method
 
 ``` objective-c
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
