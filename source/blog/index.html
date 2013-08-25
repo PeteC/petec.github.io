@@ -5,8 +5,10 @@ selected_navigation: blog
 custom_css: blog.css
 ---
 
+<h1>Blog Posts</h1>
+
 <ul class="posts">
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 	<li>
 		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 		<div class="post_metadata">
@@ -24,3 +26,23 @@ custom_css: blog.css
   	</li>
 {% endfor %}
 </ul>
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+  	{% if paginator.previous_page == 1 %}
+    	<span class="previous"><a href="/blog">Previous</a></span>
+  	{% else %}
+    	<span class="previous"><a href="/blog/page{{ paginator.previous_page }}">Previous</a></span>
+    {% endif %}
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+  	<span class="next"><a href="/blog/page{{ paginator.next_page }}">Next</a></span>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
+{% endif %}

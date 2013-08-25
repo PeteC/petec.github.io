@@ -6,11 +6,7 @@
 .posts li {
 	border-top: 1px dashed #cbc9c5;
 	padding-top: 1.2em;
-}
-
-.posts li:nth-of-type(1) {
-	border-top: 0;
-	padding-top: 0;
+	padding-bottom: 1.5em;
 }
 
 .posts h2 a, .posts h2 a:visited, .posts h2 a:hover {
@@ -62,4 +58,22 @@
 
 .post_overview {
 	padding-left: 240px;
+}
+
+.pagination {
+	padding-top: 1.2em;
+	padding-bottom: 1.2em;
+	text-align: center;
+}
+
+.pagination .previous {
+	float: left;
+	text-align: left;
+	width: 30%;
+}
+
+.pagination .next {
+	float: right;
+	text-align: right;
+	width: 30%;
 }
