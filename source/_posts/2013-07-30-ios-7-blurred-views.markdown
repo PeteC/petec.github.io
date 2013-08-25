@@ -9,6 +9,8 @@ iOS 7 is (apparently) all about the blur. This article explains one way of mimic
 
 {% img /images/posts/ios-7-blurred-views.png %}
 
+The Xcode project for this article is available on <a href="https://bitbucket.org/PeteC/glassviewexample">Bitbucket</a>.
+
 ## DSLGlassView
 
 .```DSLGlassView``` is our ```UIView``` subclass that implements the blurred view. When a ```DSLGlassView``` is added to the view heirarchy, it grabs a snapshot of it's superview. It then blurs this view using the UIImage category methods from Apple's 'Running With A Snap' sample code. Once we have a blurred snapshot, we set it to be the content of the view's layer.
@@ -79,4 +81,4 @@ Bear in mind, while this approach works great with a view moving over static vie
 
 ## Summary
 
-The code for this post is available on Github <ADD_GITHUB_URL> and includes a sample project.
+The Xcode project for this article is available on <a href="https://bitbucket.org/PeteC/glassviewexample">Bitbucket</a>.

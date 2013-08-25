@@ -11,6 +11,8 @@ iOS 7 introduces a new way to implement custom transitions between view controll
 
 In this example we'll be adding a custom transition between two view controllers. ```DSLFirstViewController``` is a collection view displaying Things. Each cell has an image and a label. ```DSLSecondViewController``` shows a single thing and also has an image and a label. What we'd like to do during the transition is animate the cell's image view to second view controller's image view.
 
+The Xcode project for this article is available on <a href="https://bitbucket.org/PeteC/transitionexample">Bitbucket</a>.
+
 ## Implementing a custom transition
 
 Transitions are handled by objects that conform to the ```UIViewControllerAnimatedTransitioning``` protocol. Let's start by defining an ```NSObject``` subclass called ```DSLTransitionFromFirstToSecond``` that conforms to this protocol that we can use to transition between the first and second view controllers
@@ -204,7 +206,7 @@ When the gesture recogniser ends, we work out if the user has dragged far enough
 ```
 
 
-Now we're creating and updating a ```UIPercentDrivenInteractiveTransition``` object, we need to tell the navigation controller to use it. We do this by implementing another new ```UINavigationControllerDelegate``` method, ```navigationController:interactionControllerForAnimationController:```
+Now we're creating and updating a ```UIPercentDrivenInteractiveTransition``` object, we need to tell the navigation controller to use it. We do this by implementing another new ```UINavigationControllerDelegate``` method:
 
 ``` objective-c
 - (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
@@ -223,4 +225,4 @@ Our custom transition from the second view controller back to the first is now i
 
 ## Summary
 
-Hopefully this post and the example project will help you to understand the steps needed to create your own custom transitions and interactions. A sample project is available on Github <ADD_GITHUB_URL>.
+Hopefully this post and the example project will help you to understand the steps needed to create your own custom transitions and interactions. A sample Xcode project is available on <a href="https://bitbucket.org/PeteC/transitionexample">Bitbucket</a>.
