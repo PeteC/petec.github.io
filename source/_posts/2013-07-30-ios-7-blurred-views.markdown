@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS7 blurred views"
-date: 2013-08-02 16:53
+date: 2013-07-30 16:53
 tags: [ios7, development]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS7 interactive transitions"
-date: 2013-08-01 16:53
+date: 2013-07-21 16:53
 tags: [ios7, development]
 ---
 
