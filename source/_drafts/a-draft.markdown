@@ -2,7 +2,7 @@
 layout: post
 title:  "A draft"
 date:   2013-08-08 12:23:53
-categories: jekyll drafts
+tags: jekyll drafts
 ---
 
 This is a draft

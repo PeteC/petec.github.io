@@ -4,7 +4,7 @@ pygments: true
 
 root: /
 permalink: /blog/:year/:month/:day/:title/
-category_dir: blog/categories
+tag_dir: blog/tags
 source: source
 
 paginate: 5

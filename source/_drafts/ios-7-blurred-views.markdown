@@ -2,7 +2,7 @@
 layout: post
 title: "iOS7 blurred views"
 date: 2013-08-02 16:53
-categories: [ios7, development]
+tags: [ios7, development]
 ---
 
 iOS 7 is (apparently) all about the blur. This article explains one way of mimicing the iOS 7 Control Center, bluring it's background as it moves into view.
