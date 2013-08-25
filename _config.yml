@@ -4,8 +4,10 @@ pygments: true
 
 root: /
 permalink: /blog/:year/:month/:day/:title/
-tag_dir: blog/tags
 source: source
+tag_dir: blog/tags
+tag_title_prefix: "Posts tagged &ldquo;"
+tag_title_suffix: "&rdquo;"
 
 paginate: 5
 paginate_path: "blog/page:num"
