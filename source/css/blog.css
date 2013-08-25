@@ -43,6 +43,7 @@
 
 .post_metadata ul li {
 	display: inline;
+	border-top: 0px;
 }
 
 .post_metadata ul li:after {
@@ -62,4 +63,3 @@
 .post_overview {
 	padding-left: 240px;
 }
-
