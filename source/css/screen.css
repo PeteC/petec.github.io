@@ -151,6 +151,10 @@ cite {
   text-align: center;
 }
 
+.appstore a {
+  border-bottom: 0;
+}
+
 img.app_icon {
   width: 80px;
   height: 80px;
