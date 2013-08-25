@@ -41,3 +41,14 @@ div.meta ul li:last-of-type:after {
 .post {
 	margin-top: 2em;
 }
+
+.post .img {
+	display: block;
+	text-align: center;
+}
+
+.post .img img {
+	background-color: #fff;
+	padding: 0.5em;
+	border: 1px solid #cccccc;
+}
