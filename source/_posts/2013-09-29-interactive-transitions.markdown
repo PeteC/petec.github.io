@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS7 interactive transitions"
-date: 2013-07-21 16:53
+date: 2013-09-29 10:00
 tags: [ios7, development]
 ---
 
@@ -11,7 +11,7 @@ iOS 7 introduces a new way to implement custom transitions between view controll
 
 In this example we'll be adding a custom transition between two view controllers. ```DSLFirstViewController``` is a collection view displaying Things. Each cell has an image and a label. ```DSLSecondViewController``` shows a single thing and also has an image and a label. What we'd like to do during the transition is animate the cell's image view to second view controller's image view.
 
-The Xcode project for this article is available on <a href="https://bitbucket.org/PeteC/transitionexample">Bitbucket</a>.
+The Xcode project for this article is available on <a href="https://github.com/PeteC/InteractiveViewControllerTransitions">GitHub</a>.
 
 ## Implementing a custom transition
 
@@ -225,4 +225,4 @@ Our custom transition from the second view controller back to the first is now i
 
 ## Summary
 
-Hopefully this post and the example project will help you to understand the steps needed to create your own custom transitions and interactions. A sample Xcode project is available on <a href="https://bitbucket.org/PeteC/transitionexample">Bitbucket</a>.
+Hopefully this post and the example project will help you to understand the steps needed to create your own custom transitions and interactions. A sample Xcode project is available on <a href="https://github.com/PeteC/InteractiveViewControllerTransitions">GitHub</a>.
