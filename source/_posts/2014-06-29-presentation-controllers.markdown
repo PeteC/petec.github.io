@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "iOS8 presenation controllers"
+title: "iOS8 presentation controllers"
 date: 2014-06-29 12:20
 tags: [ios, ios8, development]
 ---
