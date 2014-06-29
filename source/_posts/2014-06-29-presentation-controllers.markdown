@@ -5,7 +5,7 @@ date: 2014-06-29 12:20
 tags: [ios, ios8, development]
 ---
 
-iOS 8 adds a new class to help us in implement custom view controller transition. It works along side the classes and protocols introduced in iOS 7. I always find it easier to understand a new API by working through an example, so let's build the following transition
+iOS 8 adds a new class, ```UIPresentationController```, that works along-side the classes and protocols introduced in iOS 7 to help us implement custom view controller transitions. I always find it easier to understand a new API by working through an example, so let's build the following transition
 
 {% img /images/posts/presentation-controllers.gif %}
 
@@ -13,7 +13,7 @@ The Xcode project for this article is available on <a href="https://github.com/P
 
 ## Implementing a custom transition
 
-There are two objects that we need to implement our custom transition. A subclass of ```UIPresentationController``` and a class that implements the ```UIViewControllerAnimatedTransitioning``` protocol.
+There are two objects that we need to implement for our custom transition. A subclass of ```UIPresentationController``` and a class that implements the ```UIViewControllerAnimatedTransitioning``` protocol.
 
 Our ```UIPresentationController``` subclass will be responsible for animating views that aren't part of either the view controller being presented or the controller that's doing the presentation. In our case, this will be the semi-transparent red view.
 
@@ -76,7 +76,7 @@ override func dismissalTransitionWillBegin()  {
 }
 ```
 
-This animates the alpha of our dimming view to 0, it doesn't remove it when our presentation has been completly dismissed. For this we override ```dismissalTransitionDidEnd:```.
+We've now animated the alpha of our dimming view to 0, but we also need to remove it when our presentation has been completly dismissed. For this we override ```dismissalTransitionDidEnd:```.
 
 ``` swift
 override func dismissalTransitionDidEnd(completed: Bool) {
@@ -111,7 +111,7 @@ There are two protocol methods we need implement
    * ```transitionDuration:```
    * ```animateTransition:```
 
-We'll also add a class property that we can set that indicates whether our class should present or dismiss the view controller.
+We'll also add a class property that we can set on initialisation that indicates whether our class should present or dismiss the view controller.
 
 The simplest method to override is ```animatedTransition:```. All we need to do is return the animation duration for our presentation.
 
@@ -198,7 +198,7 @@ func presentationControllerForPresentedViewController(presented: UIViewControlle
 }
 ```
 
-...and an instance of our ```UIViewControllerAnimatedTransitioning``` class to animate the presentation of dismissal
+...and an instance of our ```UIViewControllerAnimatedTransitioning``` class to animate the presentation or dismissal
 
 ``` swift
 func animationControllerForPresentedController(presented: UIViewController!, presentingController presenting: UIViewController!, sourceController source: UIViewController!) -> UIViewControllerAnimatedTransitioning! {
