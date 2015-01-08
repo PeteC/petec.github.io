@@ -1,6 +1,6 @@
 name: Dative Studios
 description:  iOS Development articles and tips
-url: http://dativestudios.com/blog
+url: http://dativestudios.com
 
 markdown: redcarpet
 highlighter: pygments
