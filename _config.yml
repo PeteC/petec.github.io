@@ -1,10 +1,9 @@
 name: Dative Studios
 markdown: redcarpet
-pygments: true
+pygments: pygments
 
 root: /
 permalink: /blog/:year/:month/:day/:title/
-source: source
 tag_dir: blog/tags
 tag_title_prefix: "Posts tagged &ldquo;"
 tag_title_suffix: "&rdquo;"
