@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "UICollectionView layouts on wide iPhones"
-date: 2015-01-08 13:00
+date: 2015-01-09 09:00
 tags: [iOS, development, UICollectionView, Swift]
 ---
 
@@ -57,6 +57,6 @@ class CustomLayout: UICollectionViewFlowLayout {
 
 ```
 
-As an added bonus, you could easily extend this layout to support a different number of items per row based on it's orientaion. You could even add more items per row if the item size becomes too large.
+As an added bonus, you could easily extend this layout to support a different number of items per row based on it's orientation. You could even add more items per row if the item size becomes too large.
 
-A sample Xcode project is available on <a href="https://github.com/PeteC/WideCollectionViewLayout">GitHub</a>.
+A sample Xcode project is available on <a href="https://github.com/petec-blog/WideCollectionViewLayout">GitHub</a>.
