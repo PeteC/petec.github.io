@@ -2,7 +2,7 @@
 layout: post
 title: "iOS7 interactive transitions"
 date: 2013-09-29 10:00
-tags: [ios, ios7, development]
+tags: [iOS, iOS7, development]
 ---
 
 iOS 7 introduces a new way to implement custom transitions between view controllers. This post and accompanying project shows how we can use custom transitions with a ```UINavigationController``` and how to make the pop transition interactive.

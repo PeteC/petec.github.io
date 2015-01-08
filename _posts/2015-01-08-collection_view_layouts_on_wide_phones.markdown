@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "UICollectionView layouts on wide iPhones"
-date: 2015-01-09 09:00
+date: 2015-01-08 21:00
 tags: [iOS, development, UICollectionView, Swift]
 ---
 
