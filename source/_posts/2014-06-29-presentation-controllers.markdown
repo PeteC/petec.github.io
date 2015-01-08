@@ -7,7 +7,7 @@ tags: [ios, ios8, development]
 
 iOS 8 adds a new class, ```UIPresentationController```, that works along-side the classes and protocols introduced in iOS 7 to help us implement custom view controller transitions. I always find it easier to understand a new API by working through an example, so let's build the following transition
 
-{% img /images/posts/presentation-controllers.gif %}
+![Sample app screenshot]({{ site.url }}/images/posts/presentation-controllers.gif)
 
 The Xcode project for this article is available on <a href="https://github.com/PeteC/PresentationControllers">GitHub</a>.
 

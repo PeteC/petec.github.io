@@ -7,7 +7,7 @@ tags: [ios, ios7, development]
 
 iOS 7 introduces a new way to implement custom transitions between view controllers. This post and accompanying project shows how we can use custom transitions with a ```UINavigationController``` and how to make the pop transition interactive.
 
-{% img /images/posts/interactive-transitions.png %}
+![Sample app screenshot]({{ site.url }}/images/posts/interactive-transitions.png)
 
 In this example we'll be adding a custom transition between two view controllers. ```DSLFirstViewController``` is a collection view displaying Things. Each cell has an image and a label. ```DSLSecondViewController``` shows a single thing and also has an image and a label. What we'd like to do during the transition is animate the cell's image view to second view controller's image view.
 
