@@ -2,15 +2,13 @@
 layout: post
 title: "UICollectionView layouts on wide iPhones"
 date: 2015-01-08 13:00
-tags: [development, UICollectionView, Swift]
+tags: [iOS, development, UICollectionView, Swift]
 ---
 
-## The problem
-
-It's not uncommon to use a `UICollectionView` to show a grid of items in a view. We can use Interface Builder to configure the layout of a collection view to fit a particular phone width. Unfortunately we no longer have a single phone width to worry about and if we use this static layout on a wider iPhone such as an iPhone 6, the standard behaviour of a `UICollectionViewFlowLayout` is to increase the spacing between the cells. What is often prefferable is for the collection view's cell size to grow, leaving the gap the same across different device sizes.
+It's not uncommon to use a `UICollectionView` to show a grid of items in a view and use Interface Builder to configure it's to fit a particular phone width. Unfortunately we no longer have a single phone width to worry about and if we use this static layout on a wider iPhone such as an iPhone 6, the standard behaviour of a `UICollectionViewFlowLayout` is to increase the spacing between the cells. What is often prefferable is for the collection view's cell size to grow, leaving the gap the same across different device sizes.
 
 
-![Sample app screenshots]({{ site.url }}/images/posts/collectionview-wide-phones.gif)
+![Sample app screenshots]({{ site.url }}/images/posts/collectionview-wide-phones.png)
 	
 
 
@@ -40,7 +38,7 @@ class CustomLayout: UICollectionViewFlowLayout {
             let itemsPerRow = CGFloat(max(numberOfItemsPerRow, 1))
             
             // Calculate the sum of the spacing between cells
-            let totalSpacing = minimumLineSpacing * (itemsPerRow - 1.0)
+            let totalSpacing = minimumInteritemSpacing * (itemsPerRow - 1.0)
             
             // Calculate how wide items should be
             newItemSize.width = (collectionView.bounds.size.width - totalSpacing) / itemsPerRow
@@ -57,7 +55,8 @@ class CustomLayout: UICollectionViewFlowLayout {
     }
 }
 
-
 ```
+
+As an added bonus, you could easily extend this layout to support a different number of items per row based on it's orientaion. You could even add more items per row if the item size becomes too large.
 
 A sample Xcode project is available on <a href="https://github.com/PeteC/WideCollectionViewLayout">GitHub</a>.

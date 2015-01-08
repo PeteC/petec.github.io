@@ -1,6 +1,6 @@
 name: Dative Studios
 markdown: redcarpet
-pygments: pygments
+highlighter: pygments
 
 root: /
 permalink: /blog/:year/:month/:day/:title/
