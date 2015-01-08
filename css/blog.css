@@ -40,6 +40,8 @@
 .post_metadata ul li {
 	display: inline;
 	border-top: 0px;
+	padding: 0px;
+	line-height: 1.7em;
 }
 
 .post_metadata ul li:after {
