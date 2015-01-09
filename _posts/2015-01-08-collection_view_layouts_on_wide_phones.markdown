@@ -14,7 +14,7 @@ It's not uncommon to use a `UICollectionView` to show a grid of items in a view 
 
 ## The solution
 
-We can use a simple custom `UICollectionViewFlowLayout` to solve this problem. In our layout subclass we overrde the `prepareLayout` method to calculate a new `itemSize` that best fits the collection view's width.
+We can use a simple custom `UICollectionViewFlowLayout` to solve this problem. In our layout subclass we override the `prepareLayout` method to calculate a new `itemSize` that best fits the collection view's width.
 
 ``` swift
 
@@ -57,6 +57,6 @@ class CustomLayout: UICollectionViewFlowLayout {
 
 ```
 
-As an added bonus, you could easily extend this layout to support a different number of items per row based on it's orientation. You could even add more items per row if the item size becomes too large.
+As an added bonus, you could easily extend this layout to support a different number of items per row based on its orientation. You could even add more items per row if the item size becomes too large.
 
 A sample Xcode project is available on <a href="https://github.com/petec-blog/WideCollectionViewLayout">GitHub</a>.
