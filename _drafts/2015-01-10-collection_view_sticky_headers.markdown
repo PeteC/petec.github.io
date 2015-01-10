@@ -54,7 +54,7 @@ This has been written quite verbosely to make it easier to follow:
     }
 ```
 
-Now we can find out a section's frame, let's use this information to calculate where withing that frame the section header should be placed. `UICollectionViewLayout` has a method called `layoutAttributesForSupplementaryViewOfKind` that returns the layout attributes for supplementary views. We'll override this method to return a modified frame for our header views.
+Now we can find out a section's frame, let's use this information to calculate where within that frame the section header should be placed. `UICollectionViewLayout` has a method called `layoutAttributesForSupplementaryViewOfKind` that returns the layout attributes for supplementary views. We'll override this method to return a modified frame for our header views.
 
 ![Calculating header frame](/images/posts/sticky-headers-frame.png)
 
