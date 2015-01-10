@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "UICollectionView sticky headers"
-date: 2015-01-10 21:00
+date: 2015-01-10 13:00
 tags: [iOS, development, UICollectionView, Swift]
 ---
 
@@ -56,7 +56,7 @@ This has been written quite verbosely to make it easier to follow:
 
 Now we can find out a section's frame, let's use this information to calculate where within that frame the section header should be placed. `UICollectionViewLayout` has a method called `layoutAttributesForSupplementaryViewOfKind` that returns the layout attributes for supplementary views. We'll override this method to return a modified frame for our header views.
 
-![Calculating header frame](/images/posts/sticky-headers-frame.png)
+![Calculating header frame]({{ site.url }}/images/posts/sticky-headers-frame.png)
 
 ``` Swift
 override func layoutAttributesForSupplementaryViewOfKind(elementKind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes! {
