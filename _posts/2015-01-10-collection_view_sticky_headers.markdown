@@ -21,13 +21,13 @@ This has been written quite verbosely to make it easier to follow:
 
         // Sanity check
         let numberOfItems = collectionView!.numberOfItemsInSection(section)
-        if numberOfItems == 0 {
+        if numberOfItems < 1 {
             return nil
         }
         
         // Get the index paths for the first and last cell in the section
         let firstIndexPath = NSIndexPath(forRow: 0, inSection: section)
-        let lastIndexPath = numberOfItems == 0 ? firstIndexPath : NSIndexPath(forRow: numberOfItems - 1, inSection: section)
+        let lastIndexPath = NSIndexPath(forRow: numberOfItems - 1, inSection: section)
         
         // Work out the top of the first cell and bottom of the last cell
         var firstCellTop = layoutAttributesForItemAtIndexPath(firstIndexPath).frame.origin.y
@@ -44,7 +44,7 @@ This has been written quite verbosely to make it easier to follow:
         frame.origin.y -= headerReferenceSize.height
         frame.size.height += headerReferenceSize.height
         
-        // Increase the frame to allow space for an section insets
+        // Increase the frame to allow space for any section insets
         frame.origin.y -= sectionInset.top
         frame.size.height += sectionInset.top
         
