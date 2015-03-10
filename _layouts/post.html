@@ -1,19 +1,20 @@
 ---
 layout: default
-selected_navigation: blog
-custom_css: post.css
 ---
 
-<div class="meta">
-	<h1>{{ page.title }}</h1>
-	<p>{{ page.date | date_to_string }}</p>
-<!-- <ul class="tag_list">
-		{% for tag in page.tags %}
-		<li><a href="/blog/tags/{{ tag }}">{{ tag }}</a></li>
-		{% endfor %}
-	</ul> -->
+<div class="row post-header">
+ 	<div class="col-md-12">
+
+<h1>{{ page.title }}</h1>
+<h4>{{ page.date | date_to_string }}</h4>
+
+	</div>
 </div>
 
-<div class="post">
+<div class="row">
+ 	<div class="col-md-12 post">
+
 {{ content }}
+
+	</div>
 </div>
