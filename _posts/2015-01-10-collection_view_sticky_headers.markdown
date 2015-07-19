@@ -12,7 +12,7 @@ This post will explain how to mimic the 'sticky' behaviour of `UITableView` head
 
 The first problem we'll tackle is calculating where a section's header view should be placed to make it appear 'sticky'.
 
-The header views are always going to be contained somewhere within the section's bounds, so let's start by creating a method that, given a section index, will return the bounding frame for it's content.
+The header views are always going to be contained somewhere within the section's bounds, so let's start by creating a method that, given a section index, will return the bounding frame for its content.
 
 This has been written quite verbosely to make it easier to follow:
 
@@ -63,7 +63,7 @@ override func layoutAttributesForSupplementaryViewOfKind(elementKind: String, at
     // Get the layout attributes for a standard flow layout
     let attributes = super.layoutAttributesForSupplementaryViewOfKind(elementKind, atIndexPath: indexPath)
     
-    // If this is a header, we should tweak it's attributes
+    // If this is a header, we should tweak its attributes
     if elementKind == UICollectionElementKindSectionHeader {
         if let fullSectionFrame = frameForSection(indexPath.section) {
             let minimumY = max(collectionView!.contentOffset.y + collectionView!.contentInset.top, fullSectionFrame.origin.y)
